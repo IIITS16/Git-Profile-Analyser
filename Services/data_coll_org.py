@@ -16,6 +16,7 @@ def result():
 
     repo_list = requests.get(repo_url).json()
 
+    # API Call in loop
     for repo in repo_list :
         all_repo_name.append(repo["name"])
 
